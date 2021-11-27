@@ -21,7 +21,7 @@ export const Slippage = () => {
         }
     ]);
     
-    const url = `http://localhost:4200/api/slippages/get`;
+    const url = `https://pluggy-dolar-api.herokuapp.com/api/slippages/get`;
 
     useEffect(() => {
         axios

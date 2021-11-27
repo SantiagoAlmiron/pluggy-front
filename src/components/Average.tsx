@@ -17,7 +17,7 @@ export const Average = () => {
         average_buy_price: "Cargando"
     });
     
-    const url = `http://localhost:4200/api/averages/get`;
+    const url = `https://pluggy-dolar-api.herokuapp.com/api/averages/get`;
 
     useEffect(() => {
         axios

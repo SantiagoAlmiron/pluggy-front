@@ -21,7 +21,7 @@ export const Quotes = () => {
         }
     ]);
     
-    const url = `http://localhost:4200/api/quotes/get`;
+    const url = `https://pluggy-dolar-api.herokuapp.com/api/quotes/get`;
 
     useEffect(() => {
         axios
