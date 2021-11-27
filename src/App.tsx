@@ -9,15 +9,13 @@ function App() {
 
       <Quotes />
 
-      <div className="p-4"></div>
 
       <Average />
 
-      <div className="p-4"></div>
 
       <Slippage />
 
-      <footer className="page-footer font-small bg-success mt-5">
+      <footer className="page-footer font-small bg-success">
         <div className="footer-copyright text-center py-3">© 2021 Copyright:
           <a className="text-white text-decoration-none" href="https://pluggy.ai/en"> Pluggy.ai</a>
         </div>

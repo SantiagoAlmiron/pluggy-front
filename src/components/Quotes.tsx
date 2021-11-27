@@ -33,31 +33,33 @@ export const Quotes = () => {
     }, [])
 
     return (
-        <div className="container shadow p-5">
-            <h3 className="text-center bg-success text-white p-3">Quotes</h3>
-            {
-                quotesArr.map((object) => {
-                    return (
-                       <div>
-                        <h4 className="text-center mt-5"> Sitio: {object.source}</h4>
-                        <div className="container mt-5 d-flex justify-content-center">
-                            <div className="card mx-5" style={cardStyle}>
-                                <div className="card-body">
-                                    <h5 className="card-title text-center">Cotización Compra</h5>
-                                    <h4 className="text-center">{`$${object.buy_price.replace("$", "")}`}</h4>
+        <div className="bg-light p-5">
+            <div className="container shadow p-5">
+                <h3 className="text-center bg-success text-white p-3">Quotes</h3>
+                {
+                    quotesArr.map((object) => {
+                        return (
+                        <div>
+                            <h4 className="text-center mt-5"> Sitio: {object.source}</h4>
+                            <div className="container mt-5 d-flex justify-content-center">
+                                <div className="card mx-5" style={cardStyle}>
+                                    <div className="card-body">
+                                        <h5 className="card-title text-center">Cotización Compra</h5>
+                                        <h4 className="text-center">{`$${object.buy_price.replace("$", "")}`}</h4>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="card mx-5" style={cardStyle}>
-                                <div className="card-body">
-                                    <h5 className="card-title text-center">Cotización Venta</h5>
-                                    <h4 className="text-center">{`$${object.sell_price.replace("$", "")}`}</h4>
+                                <div className="card mx-5" style={cardStyle}>
+                                    <div className="card-body">
+                                        <h5 className="card-title text-center">Cotización Venta</h5>
+                                        <h4 className="text-center">{`$${object.sell_price.replace("$", "")}`}</h4>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                       </div>
-                    )
-                })
-            }
+                        )
+                    })
+                }
+            </div>
         </div>
     )
 

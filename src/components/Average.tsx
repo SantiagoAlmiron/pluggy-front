@@ -28,23 +28,25 @@ export const Average = () => {
     }, [])
 
     return (
-        <div className="container shadow p-5">
-            <h3 className="text-center bg-success text-white p-3">Average</h3>
-            <div>
-            <div className="container mt-5 d-flex justify-content-center">
-                <div className="card mx-5" style={cardStyle}>
-                    <div className="card-body">
-                        <h5 className="card-title text-center">Promedio Compra</h5>
-                        <h4 className="text-center">{`$${average.average_buy_price.replace("$", "")}`}</h4>
+        <div className="bg-light p-5">
+            <div className="container shadow p-5 bg-white">
+                <h3 className="text-center bg-success text-white p-3">Average</h3>
+                <div>
+                <div className="container mt-5 d-flex justify-content-center">
+                    <div className="card mx-5" style={cardStyle}>
+                        <div className="card-body">
+                            <h5 className="card-title text-center">Promedio Compra</h5>
+                            <h4 className="text-center">{`$${average.average_buy_price.replace("$", "")}`}</h4>
+                        </div>
+                    </div>
+                    <div className="card mx-5" style={cardStyle}>
+                        <div className="card-body">
+                            <h5 className="card-title text-center">Promedio Venta</h5>
+                            <h4 className="text-center">{`$${average.average_sell_price.replace("$", "")}`}</h4>
+                        </div>
                     </div>
                 </div>
-                <div className="card mx-5" style={cardStyle}>
-                    <div className="card-body">
-                        <h5 className="card-title text-center">Promedio Venta</h5>
-                        <h4 className="text-center">{`$${average.average_sell_price.replace("$", "")}`}</h4>
-                    </div>
                 </div>
-            </div>
             </div>
         </div>
     )
