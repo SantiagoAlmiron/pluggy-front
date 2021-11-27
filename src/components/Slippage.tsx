@@ -34,7 +34,7 @@ export const Slippage = () => {
 
     return (
         <div className="bg-light p-5">
-            <div className="container shadow p-5 bordered">
+            <div className="container shadow p-5 bordered bg-white">
                 <h3 className="text-center bg-success text-white p-3">Slippages</h3>
                 {
                     slippageArr.map((object) => {

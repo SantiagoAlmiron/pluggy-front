@@ -34,7 +34,7 @@ export const Quotes = () => {
 
     return (
         <div className="bg-light p-5">
-            <div className="container shadow p-5">
+            <div className="container shadow p-5 bg-white">
                 <h3 className="text-center bg-success text-white p-3">Quotes</h3>
                 {
                     quotesArr.map((object) => {
